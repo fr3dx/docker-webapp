@@ -1,11 +1,6 @@
 pipeline {
     agent { dockerfile true }
     stages {
-        stage('Cloning Git') {
-            steps {
-                git 'https://github.com/fr3dx/docker-webapp.git'
-      }
-    }
         stage('Test') {
             steps {
                 sh 'node --version'
