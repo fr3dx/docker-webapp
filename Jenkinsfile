@@ -14,6 +14,11 @@ node {
             echo "Tests passed"
         }
     }
+    stage('Build image') {
+9
+        echo "test"
+10
+    }
 }
 
 
