@@ -14,12 +14,6 @@ node {
             echo "Tests passed"
         }
     }
-
-    stage('Final msg') {
-        echo "Done"
-            } 
-
-    }
 }
 
 
