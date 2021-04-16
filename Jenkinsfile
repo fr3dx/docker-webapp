@@ -15,12 +15,10 @@ node {
         }
     }
 
-    stage('Push image') {
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-        def customImage = docker.build("fr3dx:${env.BUILD_ID}")
-        customImage.push()
+    stage('Final msg') {
+        echo "Done"
             } 
-        echo "Trying to Push Docker Build to DockerHub"
+
     }
 }
 
