@@ -15,9 +15,11 @@ node {
         }
     }
     stage('Build image') {
-9
         echo "test"
-10
+    }
+    stage('Build image') {
+
+        echo "docker "
     }
 }
 
